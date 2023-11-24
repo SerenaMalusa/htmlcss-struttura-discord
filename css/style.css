@@ -20,12 +20,12 @@ img {
     height: 100%;
 }
 
-/* DEBUG */
 .wrapper {
     height: 100%;
     display: flex;        
 }
 
+/* DEBUG */
 .wrapper > *,
 .section-cnt {
     border: 2px dashed black;
