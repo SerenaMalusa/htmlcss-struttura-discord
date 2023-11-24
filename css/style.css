@@ -23,7 +23,7 @@ img {
 /* DEBUG */
 .wrapper {
     border: 1px dotted rgb(0, 0, 0);
-    /* display: flex;     */
+    display: flex;    
     
     /* debug ??*/
     height: 100%;
@@ -43,7 +43,6 @@ header {
 
 header .wrapper {
     align-items: center;
-    display: flex;
 }
 
 header .wrapper > div {
@@ -99,7 +98,7 @@ main > section {
 }
 
 /* sezione 1 */
-.section-one {
+#section-one {
     height: 500px;
 
     /*debug */
@@ -107,7 +106,7 @@ main > section {
     border-bottom: 3px solid #abd7e6;
 }
 
-.section-one .section-cnt {
+#section-one .section-cnt {
     width: 80%;
     margin: 0 auto;
 
@@ -116,12 +115,20 @@ main > section {
     background-color: #ee82ee;
 }
 
-/* sezione 2 */
-.section-two {
+/* sezioni pari */
+.section-even {
+
+    /* debug */
     background: #ffffff;
 }
 
-.section-two .wrapper {
-    align-items: center;
-    display: flex;
+/* sezioni dispari */
+.section-odd {
+
+    /* debug */
+    background-color: #d3d3d3;
+}
+
+.section-odd .wrapper {
+    flex-direction: row-reverse;
 }
