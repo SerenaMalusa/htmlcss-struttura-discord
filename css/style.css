@@ -144,3 +144,34 @@ main > section {
     border: 2px dashed black;
     background-color: #228b22;
 }
+
+/* FOOTER */
+footer {
+    /* debug */
+    background: #23272a;
+}
+
+#footer-top {
+    height: 610px;
+    border-bottom: 2px solid #c6c6c6;
+    padding: 8px 0 24px;
+}
+
+footer .footer-info {
+    width: 30%;
+
+    /* debug */
+    background: #f08080;
+}
+
+footer .footer-bars {
+    width: 70%;
+}
+
+.footer-bars > .footer-nav {
+    width: 25%;
+    border: 2px dashed white;
+
+    /* debug */
+    background: #20b2aa;
+}
