@@ -19,13 +19,15 @@ img {
 /* DEBUG */
 .wrapper {
     border: 1px dotted rgb(0, 0, 0);
-    height: 100%;
+    display: flex;    
     
+    /* debug ??*/
+    height: 100%;
 }
 
 .wrapper > * {
     border: 2px dashed black;
-    background-color: #daa520;
+    display: flex;
 }
 
 /* HEADER */
@@ -36,14 +38,17 @@ header {
     background: #add8e6;
 }
 
-header .wrapper{
-    display: flex;
+header .wrapper {
     align-items: center;
+}
+
+header .wrapper > div {
+    padding: 8px;
+    background-color: #daa520;
 }
 
 .logo, 
 .login {
-    /* flex-grow: 1; */
     width: 20%;
 }
 
@@ -56,11 +61,34 @@ header .wrapper{
 }
 
 .nav {
-    /* flex-grow: 3; */
     width: 60%;
     text-align: center;
 }
 
-header .wrapper > div {
-    padding: 8px;
+/* MAIN */
+main > section {
+    height: 700px;
+}
+
+/* sezione 1 */
+.section-one {
+    height: 500px;
+
+    /*debug */
+    background-color: #00008b;
+    border-bottom: 3px solid #abd7e6;
+}
+
+.section-one .wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one .wrapper > div {
+    width: 80%;
+    height: 70%;
+
+    /* debug */
+    border: 2px dashed black;
+    background-color: #ee82ee;
 }
