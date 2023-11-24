@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* UTILITY */
 img {
     width: 100%;
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     height: 100%;
 }
@@ -19,7 +23,7 @@ img {
 /* DEBUG */
 .wrapper {
     border: 1px dotted rgb(0, 0, 0);
-    display: flex;    
+    /* display: flex;     */
     
     /* debug ??*/
     height: 100%;
@@ -27,12 +31,11 @@ img {
 
 .wrapper > * {
     border: 2px dashed black;
-    display: flex;
 }
 
 /* HEADER */
 header {
-    height: 80px;
+    height: 70px;
 
     /* debug */
     background: #add8e6;
@@ -40,6 +43,7 @@ header {
 
 header .wrapper {
     align-items: center;
+    display: flex;
 }
 
 header .wrapper > div {
@@ -65,9 +69,33 @@ header .wrapper > div {
     text-align: center;
 }
 
+header .nav-link {
+    margin: 0 8px;
+    text-decoration: none;
+}
+
 /* MAIN */
 main > section {
-    height: 700px;
+    height: 600px;
+    padding: 60px 0;
+}
+
+.section-cnt {
+    height: 100%;
+}
+
+.section-img {
+    width: 60%;
+
+    /* debug */
+    background: #1e90ff;
+}
+
+.section-txt {
+    width: 40%;
+
+    /* debug */
+    background: #ffc0cb;
 }
 
 /* sezione 1 */
@@ -79,16 +107,21 @@ main > section {
     border-bottom: 3px solid #abd7e6;
 }
 
-.section-one .wrapper {
-    justify-content: center;
-    align-items: center;
-}
-
-.section-one .wrapper > div {
+.section-one .section-cnt {
     width: 80%;
-    height: 70%;
+    margin: 0 auto;
 
     /* debug */
     border: 2px dashed black;
     background-color: #ee82ee;
+}
+
+/* sezione 2 */
+.section-two {
+    background: #ffffff;
+}
+
+.section-two .wrapper {
+    align-items: center;
+    display: flex;
 }
