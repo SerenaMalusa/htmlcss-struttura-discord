@@ -22,14 +22,12 @@ img {
 
 /* DEBUG */
 .wrapper {
-    border: 1px dotted rgb(0, 0, 0);
-    display: flex;    
-    
-    /* debug ??*/
     height: 100%;
+    display: flex;        
 }
 
-.wrapper > * {
+.wrapper > *,
+.section-cnt {
     border: 2px dashed black;
 }
 
@@ -45,25 +43,25 @@ header .wrapper {
     align-items: center;
 }
 
-header .wrapper > div {
+header .wrapper > .header-cnt {
     padding: 8px;
     background-color: #daa520;
 }
 
-.logo, 
-.login {
+header .logo, 
+header .login {
     width: 20%;
 }
 
-.logo {
+header .logo {
     text-align: start;
 }
 
-.login {
+header .login {
     text-align: end;
 }
 
-.nav {
+header .nav {
     width: 60%;
     text-align: center;
 }
@@ -79,22 +77,8 @@ main > section {
     padding: 60px 0;
 }
 
-.section-cnt {
+main .section-cnt {
     height: 100%;
-}
-
-.section-img {
-    width: 60%;
-
-    /* debug */
-    background: #1e90ff;
-}
-
-.section-txt {
-    width: 40%;
-
-    /* debug */
-    background: #ffc0cb;
 }
 
 /* sezione 1 */
@@ -111,8 +95,22 @@ main > section {
     margin: 0 auto;
 
     /* debug */
-    border: 2px dashed black;
     background-color: #ee82ee;
+}
+
+/* sezioni successive */
+main .section-img {
+    width: 60%;
+
+    /* debug */
+    background: #1e90ff;
+}
+
+main .section-txt {
+    width: 40%;
+
+    /* debug */
+    background: #ffc0cb;
 }
 
 /* sezioni pari */
@@ -141,7 +139,6 @@ main > section {
 #section-last .section-cnt {
 
     /* debug */
-    border: 2px dashed black;
     background-color: #228b22;
 }
 
@@ -154,22 +151,24 @@ footer {
 /* sezione principale del footer */
 #footer-top {
     height: 610px;
-    border-bottom: 2px solid #c6c6c6;
     padding: 8px 0 24px;
+    
+    /* debug ?? */
+    border-bottom: 2px solid #c6c6c6;
 }
 
-footer .footer-info {
+footer .wrapper > .footer-info {
     width: 30%;
 
     /* debug */
     background: #f08080;
 }
 
-footer .footer-bars {
+footer .wrapper > .footer-bars {
     width: 70%;
 }
 
-.footer-bars > .footer-nav {
+footer .footer-bars > .footer-nav {
     width: 25%;
     border: 2px dashed white;
 
@@ -191,10 +190,9 @@ footer .footer-bars {
     background: #7fffd4;
 }
 
-#footer-bottom .footer-item {
+#footer-bottom .wrapper > .footer-item {
     padding: 4px 8px;
 
     /* debug */
     background: #ffb6c1;
-
 }
