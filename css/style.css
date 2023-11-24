@@ -1,0 +1,66 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITY */
+img {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* DEBUG */
+.wrapper {
+    border: 1px dotted rgb(0, 0, 0);
+    height: 100%;
+    
+}
+
+.wrapper > * {
+    border: 2px dashed black;
+    background-color: #daa520;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+
+    /* debug */
+    background: #add8e6;
+}
+
+header .wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.logo, 
+.login {
+    /* flex-grow: 1; */
+    width: 20%;
+}
+
+.logo {
+    text-align: start;
+}
+
+.login {
+    text-align: end;
+}
+
+.nav {
+    /* flex-grow: 3; */
+    width: 60%;
+    text-align: center;
+}
+
+header .wrapper > div {
+    padding: 8px;
+}
