@@ -139,6 +139,8 @@ main > section {
 }
 
 #section-last .section-cnt {
+
+    /* debug */
     border: 2px dashed black;
     background-color: #228b22;
 }
