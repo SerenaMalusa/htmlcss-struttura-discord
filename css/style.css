@@ -35,7 +35,7 @@ img {
 
 /* HEADER */
 header {
-    height: 70px;
+    height: 80px;
 
     /* debug */
     background: #add8e6;
@@ -151,6 +151,7 @@ footer {
     background: #23272a;
 }
 
+/* sezione principale del footer */
 #footer-top {
     height: 610px;
     border-bottom: 2px solid #c6c6c6;
@@ -174,4 +175,26 @@ footer .footer-bars {
 
     /* debug */
     background: #20b2aa;
+}
+
+/* sezione secondaria del footer */
+#footer-bottom {
+    height: 80px;
+    padding-top: 20px;
+}
+
+#footer-bottom .wrapper {
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    background: #7fffd4;
+}
+
+#footer-bottom .footer-item {
+    padding: 4px 8px;
+
+    /* debug */
+    background: #ffb6c1;
+
 }
