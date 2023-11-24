@@ -132,3 +132,13 @@ main > section {
 .section-odd .wrapper {
     flex-direction: row-reverse;
 }
+
+/* sezione 5 - ultima sezione */
+#section-last {
+    height: 700px;
+}
+
+#section-last .section-cnt {
+    border: 2px dashed black;
+    background-color: #228b22;
+}
